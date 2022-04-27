@@ -1,0 +1,8 @@
+stop = docker-compose -f docker-compose.yml -f docker-compose.override.yml down
+run = docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
+conteners = docker ps
+images = docker images
+
+							 imageName
+opne cli inside contener = docker exec -it mongodb /bin/bash
+logs inside contener = docker logs -f mongodb
